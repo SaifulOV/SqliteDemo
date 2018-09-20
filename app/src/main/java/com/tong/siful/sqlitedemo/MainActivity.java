@@ -105,7 +105,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Data Is not updated", Toast.LENGTH_LONG).show();
             }
 
-        } else if (view.getId() == R.id.deleteBtnId) {
+        }
+
+        //delete data
+        else if (view.getId() == R.id.deleteBtnId) {
             int value = myDatabaseHelper.deleteData(id);
 
             if (value > 0) {
